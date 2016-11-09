@@ -23,6 +23,10 @@ Route::get('/view-post', function () {
     return view('view-post');
 });
 
+Route::get('/view-listings', function () {
+    return view('view-listings');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');

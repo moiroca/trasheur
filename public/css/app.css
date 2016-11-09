@@ -5780,10 +5780,9 @@ button.close {
 
 .sub-wrapper {
   background: #fff;
-  width: 900px;
   border-radius: 3px;
   padding: 20px;
-  margin: 30px auto;
+  margin-top: 30px;
   overflow: auto; }
 
 ul {
@@ -5851,5 +5850,14 @@ ul {
   text-transform: uppercase;
   width: 100%;
   padding: 10px; }
+
+.viewlistings-wrapper table {
+  width: 100%; }
+  .viewlistings-wrapper table thead {
+    border-bottom: solid 3px #eaeaea; }
+  .viewlistings-wrapper table th {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 0; }
 
 /*# sourceMappingURL=app.css.map */
