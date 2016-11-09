@@ -12,7 +12,7 @@
 		<div class="inner-wrapper">
 			<div class="item-card">
 				<header>
-					<img src="images/trash1.jpg">
+					<img src="img/trash1.jpg">
 					<span class="hidden">Sold</span>
 				</header>
 				<footer>
@@ -23,7 +23,7 @@
 
 			<div class="item-card">
 				<header>
-					<img src="images/trash1.jpg">
+					<img src="img/trash1.jpg">
 					<span class="hidden">Sold</span>
 				</header>
 				<footer>
@@ -34,7 +34,7 @@
 
 			<div class="item-card">
 				<header>
-					<img src="images/trash1.jpg">
+					<img src="img/trash1.jpg">
 					<span class="hidden">Sold</span>
 				</header>
 				<footer>
@@ -45,7 +45,7 @@
 
 			<div class="item-card">
 				<header>
-					<img src="images/trash1.jpg">
+					<img src="img/trash1.jpg">
 					<span class="hidden">Sold</span>
 				</header>
 				<footer>

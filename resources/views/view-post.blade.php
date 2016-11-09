@@ -14,7 +14,7 @@
 			</header>	
 			<div class="form-group">
 				<div name="gallery" class="coverPhoto-wrapper">
-					<img src="images/trash.jpg">
+					<img src="img/trash.jpg">
 				</div>
 			</div>
 			<div class="form-group desc-wrapper">
@@ -24,9 +24,9 @@
 		</div>
 		<div class="col-lg-4 side-wrapper">
 			<ul class="gallery-wrapper">
-				<li><a href=""><img src="images/trash1.jpg"></a></li>
-				<li><a href=""><img src="images/trash1.jpg"></a></li>
-				<li><a href=""><img src="images/trash1.jpg"></a></li>
+				<li><a href=""><img src="img/trash1.jpg"></a></li>
+				<li><a href=""><img src="img/trash1.jpg"></a></li>
+				<li><a href=""><img src="img/trash1.jpg"></a></li>
 			</ul>
 			<button class="btn-purhcase btn-action">Purchase</button>
 		</div>
