@@ -15,15 +15,19 @@ const elixir = require('laravel-elixir');
 
 elixir(mix => {
     mix.sass('app.scss')
-       .webpack('app.js')
-       .copy(
+        .webpack('app.js')
+        .copy(
         'node_modules/bootstrap/dist',
         'public/packages/bootstrap')
-       .copy(
+        .copy(
         'node_modules/dropzone/dist',
         'public/packages/dropzone')
-       .scripts([
+        .scripts([
        			'dropzone-config.js'
        		], 
-       		'public/js/dropzone-config.js');
+       		'public/js/dropzone-config.js')
+        .scripts([
+            'posts.js'
+          ], 
+          'public/js/posts.js');
 });

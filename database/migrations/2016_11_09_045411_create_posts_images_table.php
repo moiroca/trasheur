@@ -13,16 +13,10 @@ class CreatePostsImagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('posts_images', function (Blueprint $table) {
+        Schema::create('images', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('url');
-            $table->integer('post_id')->unsigned();
-            $table->enum('options', ['needed', 'dispose']);
-            $table->foreign('post_id')
-                  ->references('id')
-                  ->on('posts')
-                  ->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -34,10 +28,6 @@ class CreatePostsImagesTable extends Migration
      */
     public function down()
     {
-        Schema::table('posts_images', function (Blueprint $table) {
-            $table->dropForeign('posts_images_post_id_foreign');
-        });
-
-        Schema::drop('posts_images');
+        Schema::drop('images');
     }
 }

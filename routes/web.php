@@ -40,7 +40,7 @@ Route::post('upload/delete', [
 ]);
 
 Route::get('server-images', [
-	'as' => 'server-images', 
+	'as'   => 'server-images', 
 	'uses' => 'ImageController@getServerImages'
 ]);
 

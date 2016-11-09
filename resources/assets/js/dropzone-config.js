@@ -1,6 +1,7 @@
 var photo_counter = 0;
-Dropzone.options.realDropzone = {
 
+Dropzone.options.realDropzone = {
+    
     uploadMultiple: false,
     parallelUploads: 100,
     maxFilesize: 8,
@@ -15,21 +16,22 @@ Dropzone.options.realDropzone = {
     init:function() {
 
         // Add server images
-        var myDropzone = this;
 
-        // $.get('/server-images', function(data) {
+        // var myDropzone = new Dropzone("div.uploader", { url: "/upload"});
 
-        //     $.each(data.images, function (key, value) {
+        // // $.get('/server-images', function(data) {
 
-        //         var file = {name: value.original, size: value.size};
-        //         myDropzone.options.addedfile.call(myDropzone, file);
-        //         myDropzone.createThumbnailFromUrl(file, 'images/icon_size/' + value.server);
-        //         myDropzone.emit("complete", file);
-        //         $('.serverfilename', file.previewElement).val(value.server);
-        //         photo_counter++;
-        //         $("#photoCounter").text( "(" + photo_counter + ")");
-        //     });
-        // });
+        // //     $.each(data.images, function (key, value) {
+
+        // //         var file = {name: value.original, size: value.size};
+        // //         myDropzone.options.addedfile.call(myDropzone, file);
+        // //         myDropzone.createThumbnailFromUrl(file, 'images/icon_size/' + value.server);
+        // //         myDropzone.emit("complete", file);
+        // //         $('.serverfilename', file.previewElement).val(value.server);
+        // //         photo_counter++;
+        // //         $("#photoCounter").text( "(" + photo_counter + ")");
+        // //     });
+        // // });
 
         this.on("removedfile", function(file) {
 
@@ -65,9 +67,11 @@ Dropzone.options.realDropzone = {
         }
         return _results;
     },
-    success: function(file,response) {
+    success: function(file, response) {
         $('.serverfilename', file.previewElement).val(response.filename);
         photo_counter++;
         $("#photoCounter").text( "(" + photo_counter + ")");
+
+        $("#item_images").append("<input type='hidden' name='images[]' value='" + response.post_image_id + "' />")
     }
 }

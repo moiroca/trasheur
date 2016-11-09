@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Repositories\ImageRepository;
 use Illuminate\Support\Facades\Input;
 use App\Models\PostImage as Image; 
+use \App\Services\PostImageService;
 use File;
 
 class ImageController extends Controller
 {
-    protected $image;
+    protected $imageService;
 
-    public function __construct(ImageRepository $imageRepository)
+    public function __construct(PostImageService $imageService)
     {
-        $this->image = $imageRepository;
+        $this->imageService = $imageService;
     }
 
     public function getUpload()
@@ -24,7 +24,7 @@ class ImageController extends Controller
     public function postUpload()
     {
         $photo = Input::all();
-        $response = $this->image->upload($photo);
+        $response = $this->imageService->upload($photo);
         return $response;
 
     }
@@ -33,6 +33,7 @@ class ImageController extends Controller
     {
         $images = Image::get(['name', 'url']);
         $imageAnswer = [];
+        
         foreach ($images as $image) {
             $imageAnswer[] = [
                 'original' => $image->name,
@@ -56,7 +57,7 @@ class ImageController extends Controller
             return 0;
         }
 
-        $response = $this->image->delete( $filename );
+        $response = $this->imageService->delete( $filename );
 
         return $response;
     }

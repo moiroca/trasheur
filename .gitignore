@@ -7,5 +7,7 @@ Homestead.yaml
 .env
 /public/packages
 /public/images
+/public/css/
+/public/js/
 /public/images/full_size/*
 /public/images/icon_size/*

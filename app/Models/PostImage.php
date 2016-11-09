@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class PostImage extends Model
 {
-	protected $table = "posts_images";
+	protected $table = "images";
 	
     /**
      * The attributes that are mass assignable.
@@ -14,6 +14,13 @@ class PostImage extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'url', 'post_id',
+        'name', 'url',
     ];
+
+    /**
+     * Indicates if the model should be timestamped.
+     *
+     * @var bool
+     */
+    public $timestamps = true; 
 }

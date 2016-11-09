@@ -23,5 +23,16 @@ class PostController extends Controller
     public function post_create(CreatePostsRequest $request)
     {
     	$post = $this->postService->create( $request->all() );
+        $images = json_decode($request->get('imagesIds'));
+
+        $savePostImage = true;
+        
+        if ( $images ) {
+            $savePostImage = $this->postService->savePostImage($post, $images);
+        }
+
+        return response()->json([
+            'error_code' => ($savePostImage) ? 200 : 500
+        ]);
     }
 }

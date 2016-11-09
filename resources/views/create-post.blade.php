@@ -11,7 +11,7 @@
 			<a href="">Share</a>
 		</nav>
 
-		<div class="sub-wrapper step1">
+		<!-- <div class="sub-wrapper step1">
 			<h2>Step 1</h2>
 			<p>Tell us about yourself.</p>
 			<div class="form-group">
@@ -33,7 +33,7 @@
 			<footer>
 				<button class="btn-link pull-right">Save and Next</button>
 			</footer>
-		</div>
+		</div> -->
 
 		<div class="sub-wrapper step2">
 			<h2>Step 2</h2>
