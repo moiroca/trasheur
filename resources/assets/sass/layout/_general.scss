@@ -1,5 +1,52 @@
+.navbar {
+	margin: 0;
+}
+
+.homepage-wrapper {
+	.outer-container {
+	    position: absolute;
+	    top: 0;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+		background: url('/images/coverphoto.jpg');
+		display: block;
+	}
+	.screen {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(1, 1, 1, 0.3);
+	}
+}
+
 .covertext-wrapper {
-	text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+    h1 {
+    	font-size: 130px;
+    	margin-bottom: 0;
+    }
+    p {
+    	font-size: 30px;
+    	font-weight: 100;
+    	margin-bottom: 32px;
+    }
+    button {
+    	font-size: 26px;
+    	font-weight: 700;
+    	border-radius: 5px;
+    	padding: 10px 30px 7px;
+    }
 }
 
 .createpost-wrapper {
@@ -71,6 +118,9 @@
 		.item-card {
 			width: 22%;
 			height: 350px;
+			&:nth-child(4n) {
+				margin-right: 0;
+			}		
 		}
 	}
 }

@@ -5800,6 +5800,8 @@ h1, h2, h3, h4, h5, h6 {
 a {
   font-family: "Secular One", Helvetica, Arial, sans-serif;
   cursor: pointer; }
+  a:hover {
+    text-decoration: none; }
 
 p {
   font-family: "Roboto", Helvetica, Arial, sans-serif; }
@@ -5833,16 +5835,16 @@ span {
     text-decoration: none; }
 
 .btn-link {
-  background: #c0e221;
-  border: solid 1px #c0e221; }
+  background: #68819c;
+  border: solid 1px #68819c; }
   .btn-link:hover {
-    background: #b7d81c; }
+    background: #617994; }
 
 .btn-action {
-  background: #2ad54e;
-  border: solid 1px #2ad54e; }
+  background: #adbc42;
+  border: solid 1px #adbc42; }
   .btn-action:hover {
-    background: #27c849; }
+    background: #a3b13e; }
 
 .step-nav {
   text-align: center; }
@@ -5898,18 +5900,63 @@ span {
       bottom: -3px;
       color: #fff !important;
       font-weight: 600;
-      background: #2ad54e;
+      background: #adbc42;
       border-radius: 3px 0 0 0;
       padding: 5px 10px;
       margin: 0; }
   .item-card footer {
     padding: 10px 15px;
     overflow: hidden; }
+    .item-card footer a {
+      color: #adbc42;
+      font-size: 16px; }
+      .item-card footer a:hover {
+        color: #9ca93b; }
     .item-card footer p {
       text-overflow: ellipsis; }
 
+.navbar {
+  margin: 0; }
+
+.homepage-wrapper .outer-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/images/coverphoto.jpg");
+  display: block; }
+
+.homepage-wrapper .screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(1, 1, 1, 0.3); }
+
 .covertext-wrapper {
-  text-align: center; }
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  z-index: 1; }
+  .covertext-wrapper h1 {
+    font-size: 130px;
+    margin-bottom: 0; }
+  .covertext-wrapper p {
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 32px; }
+  .covertext-wrapper button {
+    font-size: 26px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 10px 30px 7px; }
 
 .createpost-wrapper h1 {
   text-align: center; }
@@ -5959,5 +6006,7 @@ span {
   .profile-wrapper .sub-wrapper .item-card {
     width: 22%;
     height: 350px; }
+    .profile-wrapper .sub-wrapper .item-card:nth-child(4n) {
+      margin-right: 0; }
 
 /*# sourceMappingURL=app.css.map */

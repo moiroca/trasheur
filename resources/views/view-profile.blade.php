@@ -4,7 +4,7 @@
 
 <div class="profile-wrapper">
 	<div class="inner-wrapper">
-		<h2>Chito Miranda</h2>
+		<h2>Jon Snow</h2>
 		<span><i class="fa fa-map-marker" aria-hidden="true"></i> Tacloban City</span>
 	</div>
 	
