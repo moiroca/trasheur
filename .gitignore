@@ -5,3 +5,7 @@
 Homestead.json
 Homestead.yaml
 .env
+/public/packages
+/public/images
+/public/images/full_size/*
+/public/images/icon_size/*
