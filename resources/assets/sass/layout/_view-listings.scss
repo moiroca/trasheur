@@ -1,0 +1,13 @@
+.viewlistings-wrapper {
+	table {
+		width: 100%;
+		thead {
+			border-bottom: solid 3px $subtext-color;
+		}
+		th {
+			text-transform: uppercase;
+    		font-weight: 700;
+    		padding: 10px 0;
+		}
+	}
+}
