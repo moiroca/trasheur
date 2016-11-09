@@ -5848,8 +5848,7 @@ ul {
 .viewpost-wrapper .btn-purhcase {
   font-size: 30px;
   font-weight: 700;
-  -webkit-transform: uppercase;
-  transform: uppercase;
+  text-transform: uppercase;
   width: 100%;
   padding: 10px; }
 

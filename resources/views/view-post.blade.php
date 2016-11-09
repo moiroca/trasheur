@@ -28,7 +28,7 @@
 				<li><a href=""><img src="images/trash1.jpg"></a></li>
 				<li><a href=""><img src="images/trash1.jpg"></a></li>
 			</ul>
-			<button class="btn-purhcase">Purchase</button>
+			<button class="btn-purhcase btn-action">Purchase</button>
 		</div>
 	</div>
 </div>		
