@@ -17,10 +17,10 @@
 				</thead>
 				<tbody>
 					<tr>
-						<th>Fan Blade</th>
-						<th>John Roca</th>
-						<th>Nov 3, 2016</th>
-						<th><button>View</button></th>
+						<td>Fan Blade</td>
+						<td>John Roca</td>
+						<td>Nov 3, 2016</td>
+						<td><button class="btn-link">View</button></td>
 					</tr>
 				</tbody>
 			</table>

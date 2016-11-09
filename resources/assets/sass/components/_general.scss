@@ -26,14 +26,55 @@ ul {
 	padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: $header-font, Helvetica, Arial, sans-serif;
+}
+
+p {
+	font-family: $body-font, Helvetica, Arial, sans-serif;
+}
+
+span, label, th {
+	font-family: $sub-text, Helvetica, Arial, sans-serif;
+}
+
+td {
+	color: darken($text-color, 10%);
+	font-family: $body-font;
+}
+
+label {
+	color: lighten($subtext-color, 15%);
+}
+
+span {
+	color: lighten($subtext-color, 10%);
+}
+
 .btn-link, .btn-action {
-	border-radius: 3px;
+	color: #fff;
+	font-family: $btn-font, Helvetica, Arial, sans-serif;
+	font-weight: $black;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 3px 10px 2px;
+    min-width: 50px;
+    &:hover {
+    	color: #fff;
+    	text-decoration: none;
+    }
 }
 
 .btn-link {
-
+	background: $secondary-color;
+	&:hover {
+		background: darken($secondary-color, 3%);
+	}
 }
 
 .btn-action {
-
+	background: $primary-color;
+	&:hover {
+		background: darken($primary-color, 3%);
+	}
 }

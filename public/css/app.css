@@ -1055,7 +1055,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   line-height: 1.6;
-  color: #636b6f;
+  color: #999;
   background-color: #f5f8fa; }
 
 input,
@@ -2688,7 +2688,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #a4aaae; }
+  color: #d9d9d9; }
 
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -4309,7 +4309,7 @@ a.badge:hover, a.badge:focus {
     margin-right: auto; }
   .thumbnail .caption {
     padding: 9px;
-    color: #636b6f; }
+    color: #999; }
 
 a.thumbnail:hover,
 a.thumbnail:focus,
@@ -5789,8 +5789,46 @@ ul {
   list-style: none;
   padding: 0; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Secular One", Helvetica, Arial, sans-serif; }
+
+p {
+  font-family: "Roboto", Helvetica, Arial, sans-serif; }
+
+span, label, th {
+  font-family: "Quicksand", Helvetica, Arial, sans-serif; }
+
+td {
+  color: gray;
+  font-family: "Roboto"; }
+
+label {
+  color: white; }
+
+span {
+  color: white; }
+
 .btn-link, .btn-action {
-  border-radius: 3px; }
+  color: #fff;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 3px 10px 2px;
+  min-width: 50px; }
+  .btn-link:hover, .btn-action:hover {
+    color: #fff;
+    text-decoration: none; }
+
+.btn-link {
+  background: #ffc600; }
+  .btn-link:hover {
+    background: #f0ba00; }
+
+.btn-action {
+  background: #2ad54e; }
+  .btn-action:hover {
+    background: #27c849; }
 
 .step-nav {
   text-align: center; }
