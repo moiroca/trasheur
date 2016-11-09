@@ -5824,13 +5824,13 @@ span {
 
 .btn-link, .btn-action {
   color: #fff;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Secular One", Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 3px;
   padding: 3px 10px 2px;
   min-width: 50px; }
-  .btn-link:hover, .btn-action:hover {
+  .btn-link:hover, .btn-link:focus, .btn-link:active, .btn-action:hover, .btn-action:focus, .btn-action:active {
     color: #fff;
     text-decoration: none; }
 
@@ -5956,10 +5956,12 @@ span {
     font-weight: 100;
     margin-bottom: 32px; }
   .covertext-wrapper a {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
     border-radius: 5px;
-    padding: 10px 30px 7px; }
+    width: 250px;
+    padding: 10px 30px 6px;
+    display: inline-block; }
 
 .createpost-wrapper h1 {
   text-align: center; }

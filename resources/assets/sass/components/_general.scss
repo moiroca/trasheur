@@ -76,7 +76,7 @@ span {
     border-radius: 3px;
     padding: 3px 10px 2px;
     min-width: 50px;
-    &:hover {
+    &:hover, &:focus, &:active {
     	color: #fff;
     	text-decoration: none;
     }
