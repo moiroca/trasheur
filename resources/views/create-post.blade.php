@@ -31,7 +31,7 @@
 				<input type="text" name="" class="form-control">
 			</div>
 			<footer>
-				<button class="pull-right">Save and Next</button>
+				<button class="btn-link pull-right">Save and Next</button>
 			</footer>
 		</div>
 
@@ -60,7 +60,7 @@
 				<textarea class="form-control" rows="5" cols="50"></textarea>
 			</div>
 			<footer>
-				<button class="pull-right">Save and Next</button>
+				<button class="btn-link pull-right">Save and Next</button>
 			</footer>
 		</div>
 
@@ -79,8 +79,8 @@
 				<li><a href=""></a></li>
 			</ul>
 			<footer>
-				<button class="pull-right">Next</button>
-				<button class="pull-right">Continue</button>
+				<button class="btn-link pull-right">Next</button>
+				<button class="btn-link pull-right">Continue</button>
 			</footer>
 		</div>
 
