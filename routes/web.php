@@ -57,6 +57,11 @@ Route::group(['middleware' => 'auth'], function () {
     	'as' => 'posts.post_create',
     	'uses' => 'PostController@post_create'
     ]);
+
+    Route::get('/profile', [
+        'as' => 'profile',
+        'uses' => 'ProfileController@index'
+    ]);
 });
 
 // Admin
