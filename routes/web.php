@@ -66,6 +66,11 @@ Route::group(['middleware' => 'auth'], function () {
         'as' => 'profile',
         'uses' => 'ProfileController@index'
     ]);
+
+    Route::get('/posts/{postId}', [
+        'as' => 'post.item',
+        'uses' => 'ProfileController@index'
+    ]);
 });
 
 // Admin

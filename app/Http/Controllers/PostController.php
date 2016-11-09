@@ -24,4 +24,12 @@ class PostController extends Controller
     {
     	$post = $this->postService->create( $request->all() );
     }
+
+    public function getPost() {
+        $data = [
+            // 'title' => 'Title'
+        ];
+
+        return view('post-item', compact($data));
+    }
 }
