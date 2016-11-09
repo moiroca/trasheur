@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container">
-	<div class="sub-container">
+	<div class="sub-container createpost-wrapper">
 		<h1>Create Post</h1>
 		<nav class="step-nav">
 			<a href="">Basics</a>
@@ -48,13 +48,11 @@
 			</div>
 			
 			<div class="form-group">
-				<div class="row">
-					<select>
-						<option>- Choose Status -</option>
-						<option>Disposal</option>
-						<option>Needed</option>
-					</select>
-				</div>
+				<select class="form-control">
+					<option>- Choose Status -</option>
+					<option>Disposal</option>
+					<option>Needed</option>
+				</select>
 			</div>	
 
 			<div class="form-group">
