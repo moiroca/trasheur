@@ -5,7 +5,8 @@
 		<table class="table">
 			<tr>
 				<th> Item </th>
-				<th> Owner </th>
+				<th> Seller </th>
+				<th> Date </th>
 				<th> Action </th>
 			</tr>
 		</table>

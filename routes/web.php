@@ -58,5 +58,5 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 // Admin
-Route::get('/admin', 'Admin\DashboardController@index');
-Route::get('/admin/{item}', 'Admin\DashboardController@getUserItem');
+Route::get('/admin', 'Admin\AdminController@index');
+Route::get('/admin/{item}', 'Admin\AdminController@getUserItem');

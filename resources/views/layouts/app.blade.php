@@ -20,6 +20,8 @@
         ]); ?>
     </script>
     <script src="https://use.fontawesome.com/3d16f7157b.js"></script>
+    @yield('styles')
+    
 </head>
 <body>
     <div id="app">
@@ -84,5 +86,6 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    @yield('scripts')
 </body>
 </html>
