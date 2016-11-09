@@ -11,3 +11,5 @@ Homestead.yaml
 /public/js/
 /public/images/full_size/*
 /public/images/icon_size/*
+/public/css
+/public/uploads

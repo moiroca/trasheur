@@ -20,8 +20,16 @@ elixir(mix => {
         'node_modules/bootstrap/dist',
         'public/packages/bootstrap')
         .copy(
-        'node_modules/dropzone/dist',
-        'public/packages/dropzone')
+          'node_modules/dropzone/dist',
+          'public/packages/dropzone')
+        .copy(
+          'resources/assets/js/lib/jquery-3.1.1.js',
+          'public/js/lib'
+        )
+        .copy(
+          'node_modules/lightgallery/dist',
+          'public/packages/lightgallery'
+        )
         .scripts([
        			'dropzone-config.js'
        		], 

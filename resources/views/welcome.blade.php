@@ -1,16 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">HOMEPAGE</div>
-
-                <div class="panel-body">
-                    WELCOME!
-                </div>
-            </div>
+<div class="outer-container">
+    <div class="inner-wrapper">
+        <div class="covertext-wrapper">
+            <h1>Trashure</h1>
+            <p>One man's trash is another man's treasure</p>
+            <button class="btn-action">Post Item</button>
         </div>
     </div>
 </div>

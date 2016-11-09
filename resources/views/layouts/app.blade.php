@@ -21,6 +21,8 @@
         ]); ?>
     </script>
     <script src="https://use.fontawesome.com/3d16f7157b.js"></script>
+    @yield('styles')
+    
 </head>
 <body>
     <div id="app">
@@ -62,6 +64,10 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
+                                        <a href="{{ url('/profile') }}">
+                                            Profile
+                                        </a>
+                                        
                                         <a href="{{ url('/logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

@@ -19,15 +19,21 @@ Route::get('/create-post', function () {
     return view('create-post');
 });
 
+Route::get('/view-profile', function () {
+    return view('view-profile');
+});
+
+Route::get('/view-post', function () {
+    return view('view-post');
+});
+
+Route::get('/view-listings', function () {
+    return view('view-listings');
+});
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-
-Route::get('/', [
-	'as'   => 'upload', 
-	'uses' => 'ImageController@getUpload'
-]);
 
 Route::post('upload', [
 	'as'   => 'upload-post', 
@@ -55,4 +61,18 @@ Route::group(['middleware' => 'auth'], function () {
     	'as' => 'posts.post_create',
     	'uses' => 'PostController@post_create'
     ]);
+
+    Route::get('/profile', [
+        'as' => 'profile',
+        'uses' => 'ProfileController@index'
+    ]);
+
+    Route::get('/posts/{postId}', [
+        'as' => 'post.item',
+        'uses' => 'ProfileController@index'
+    ]);
 });
+
+// Admin
+Route::get('/admin', 'Admin\AdminController@index');
+Route::get('/admin/{item}', 'Admin\AdminController@getUserItem');

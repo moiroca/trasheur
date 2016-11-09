@@ -35,4 +35,12 @@ class PostController extends Controller
             'error_code' => ($savePostImage) ? 200 : 500
         ]);
     }
+
+    public function getPost() {
+        $data = [
+            // 'title' => 'Title'
+        ];
+
+        return view('post-item', compact($data));
+    }
 }
