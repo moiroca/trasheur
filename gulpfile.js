@@ -15,5 +15,15 @@ require('laravel-elixir-vue-2');
 
 elixir(mix => {
     mix.sass('app.scss')
-       .webpack('app.js');
+       .webpack('app.js')
+       .copy(
+        'node_modules/bootstrap/dist',
+        'public/packages/bootstrap')
+       .copy(
+        'node_modules/dropzone/dist',
+        'public/packages/dropzone')
+       .scripts([
+       			'dropzone-config.js'
+       		], 
+       		'public/js/dropzone-config.js');
 });
