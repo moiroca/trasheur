@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use App\Utilities\Constant;
 
 class CreateUsersTable extends Migration
 {
@@ -20,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('location');
             $table->string('contact');
+            $table->tinyInteger('user_type')->default(Constant::SELLER_ROLE);
             $table->rememberToken();
             $table->timestamps();
         });
