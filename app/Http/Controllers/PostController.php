@@ -6,14 +6,16 @@ use Illuminate\Http\Request;
 use App\Http\Requests\CreatePostsRequest;
 use App\Services\PostService;
 use Auth;
+use App\Repositories\PostRepository;
 
 class PostController extends Controller
 {
-	private $postService;
+	private $postService, $postRepo;
 
-	public function __construct(PostService $postService) 
+	public function __construct(PostService $postService, PostRepository $postRepo) 
 	{
 		$this->postService = $postService;
+        $this->postRepo = $postRepo;
 	}
 
     public function index(Request $request)
@@ -44,11 +46,8 @@ class PostController extends Controller
         ]);
     }
 
-    public function getPost() {
-        $data = [
-            // 'title' => 'Title'
-        ];
-
-        return view('post-item', compact($data));
+    public function getPost($item) {
+        $post = $this->postRepo->find($item);
+        return view('posts.item', compact( 'post' ));
     }
 }

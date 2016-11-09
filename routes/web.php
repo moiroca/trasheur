@@ -72,9 +72,9 @@ Route::group(['middleware' => 'auth'], function () {
         'uses' => 'ProfileController@index'
     ]);
 
-    Route::get('/posts/{postId}', [
+    Route::get('/posts/{item}', [
         'as' => 'post.item',
-        'uses' => 'ProfileController@index'
+        'uses' => 'PostController@getPost'
     ]);
 });
 

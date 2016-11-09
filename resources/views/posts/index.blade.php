@@ -18,7 +18,9 @@
 						<span class="hidden">Sold</span>
 					</header>
 					<footer>
-						<a>{{ $post->title }}</a>
+						<a href="{{ url('/posts/'.$post->id) }}">
+							{{ $post->title }}
+						</a>
 						<p>{{ $post->description }}</p>
 					</footer>
 				</div>
