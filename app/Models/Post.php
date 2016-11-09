@@ -12,7 +12,7 @@ class Post extends Model
      * @var array
      */
     protected $fillable = [
-        'title', 'description'
+        'title', 'description', 'user_id'
     ];
 
     /**
@@ -25,5 +25,10 @@ class Post extends Model
     public function images()
     {
         return $this->belongsToMany('App\Models\PostImage', 'posts_images', 'post_id', 'image_id');
+    }
+
+    public function seller()
+    {
+        return $this->belongsTo('App\Models\User', 'user_id');
     }
 }

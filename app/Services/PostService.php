@@ -26,14 +26,16 @@ class PostService {
 
 	public function savePostImage(Post $post, $imageIds) 
 	{
-		$error = false;
+		$isSuccess = true;
 
 		try {
 			foreach ($imageIds as $key => $imageId) {
 				$post->images()->attach( $imageId );
 			}
-		} catch (\Exception $e) { $error = true; }
+		} catch (\Exception $e) { 
+			$isSuccess = false; 
+		}
 
-		return $error;
+		return $isSuccess;
 	}
 }

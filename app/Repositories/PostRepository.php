@@ -19,4 +19,14 @@ class PostRepository
 	{
 		return $this->model->create($data);
 	}
+
+	public function getAll()
+	{
+		return $this->model->all();
+	}
+
+	public function find($id)
+	{
+		return $this->model->find( $id );
+	}
 }

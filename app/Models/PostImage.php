@@ -23,4 +23,9 @@ class PostImage extends Model
      * @var bool
      */
     public $timestamps = true; 
+
+    public function imageFullUrl()
+    {
+        return env('APP_URL') . '/images/full_size/' . $this->url;
+    }
 }

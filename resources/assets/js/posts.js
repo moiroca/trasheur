@@ -25,7 +25,7 @@ var Posts = {
 					_token : _token,
 				},
 				success : function(response) {
-					console.log( response );
+					window.location.href = "/posts";
 				}
 			});
 		});

@@ -16,14 +16,17 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td> Fan Blade </td>
-						<td> John Roca </td>
-						<td> Nov 3, 2016 </td>
-						<td>
-							<button> View </button>
-						</td>
-					</tr>
+					@forelse( $posts as $post )
+						<tr>
+							<td>{{ $post->title }}</td>
+							<td>{{ $post->seller->name }} </td>
+							<td>{{ $post->created_at }}</td>
+							<td>
+							<a class="btn btn-primary" href="{{ route('admin.view_user_posts', [ 'item' => $post->id ])}}">View</a>
+							</td>
+						</tr>
+					@empty
+					@endforelse
 				</tbody>
 			</table>
 		</div>

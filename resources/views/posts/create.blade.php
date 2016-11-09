@@ -8,7 +8,7 @@
 
         <div class="sub-wrapper step2">
             <p>Tell us about your Item.</p>
-            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <!-- <input type="hidden" name="_token" value="{{ csrf_token() }}"> -->
             <div class="form-group">
                 <label>Item Name</label>
                 <input type="text" name="title" class="form-control">
@@ -20,8 +20,13 @@
             </div>
             <div class="form-group">
                 <label>Images <span id="photoCounter"></span></label>
-                <br />
-                {!! Form::open(['url' => route('upload-post'), 'class' => 'dropzone', 'files'=>true, 'id'=>'real-dropzone']) !!}
+                
+                {!! Form::open([
+                    'url' => route('upload-post'), 
+                    'class' => 'dropzone', 
+                    'files' => true, 
+                    'id'=>'real-dropzone']) !!}
+                
                 <div id="realDropzone" class="uploader">
                     <div class="dz-message"></div>
 
@@ -31,7 +36,7 @@
 
                     <div class="dropzone-previews" id="dropzonePreview"></div>
 
-                    <h4 style="text-align: center;color:#428bca;">Drop images in this area  <span class="fa fa-upload"></span></h4>
+                    <h4 style="text-align: center; color:#428bca;">Drop images in this area  <span class="fa fa-upload"></span></h4>
                 </div>
                 {!! Form::close() !!}
                 <span class="help-block">Images are uploaded as soon as you drop them</span>
