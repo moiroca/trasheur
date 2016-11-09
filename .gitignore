@@ -9,3 +9,4 @@ Homestead.yaml
 /public/images
 /public/images/full_size/*
 /public/images/icon_size/*
+/public/css
