@@ -19,6 +19,7 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+    <script src="https://use.fontawesome.com/3d16f7157b.js"></script>
 </head>
 <body>
     <div id="app">

@@ -5766,4 +5766,38 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+* {
+  padding: 0;
+  margin: 0; }
+
+.inner-wrapper {
+  width: 1200px;
+  margin: auto; }
+
+.sub-container {
+  width: 900px;
+  margin: auto; }
+
+.sub-wrapper {
+  background: #fff;
+  width: 900px;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 30px auto;
+  overflow: auto; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.step-nav {
+  text-align: center; }
+  .step-nav li {
+    margin: 10px 30px;
+    display: inline-block; }
+    .step-nav li span {
+      display: block; }
+  .step-nav a {
+    margin: 10px; }
+
 /*# sourceMappingURL=app.css.map */
