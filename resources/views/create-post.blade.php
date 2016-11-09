@@ -50,7 +50,7 @@
 			<div class="form-group">
 				<div class="row">
 					<select>
-						<option>- Choose Mode -</option>
+						<option>- Choose Status -</option>
 						<option>Disposal</option>
 						<option>Needed</option>
 					</select>
