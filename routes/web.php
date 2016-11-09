@@ -11,6 +11,12 @@
 |
 */
 
+Route::get('/', function () {
+    $user = Auth::user();
+    $isSeller = Auth::guest() || ($user && $user->user_type == \App\Utilities\Constant::SELLER_ROLE);
+    return view('welcome', compact('isSeller'));
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
@@ -53,11 +59,6 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 // Static
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/create-post', function () {
     return view('templates.create-post');
 });
