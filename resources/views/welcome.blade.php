@@ -9,10 +9,8 @@
 	        <div class="covertext-wrapper">
 	            <h1>Trashure</h1>
 	            <p>One man's trash is another man's treasure</p>
-	            <button class="btn-action">Post Item</button>
+	            <a href="{{ route('posts.get_create') }}" class="btn-action">Post Item</a>
 	        </div>
 	    </div>
 	</div>
-</div>
-
 @endsection

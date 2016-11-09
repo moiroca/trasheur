@@ -5915,6 +5915,9 @@ span {
     .item-card footer p {
       text-overflow: ellipsis; }
 
+.createpost-wrapper form {
+  border: 2px dashed rgba(0, 0, 0, 0.5) !important; }
+
 .navbar {
   margin: 0; }
 
@@ -5952,7 +5955,7 @@ span {
     font-size: 30px;
     font-weight: 100;
     margin-bottom: 32px; }
-  .covertext-wrapper button {
+  .covertext-wrapper a {
     font-size: 26px;
     font-weight: 700;
     border-radius: 5px;

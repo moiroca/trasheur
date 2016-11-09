@@ -52,6 +52,11 @@ Route::get('server-images', [
 
 Route::group(['middleware' => 'auth'], function () {
 
+    Route::get('/posts', [
+        'as' => 'posts.index',
+        'uses' => 'PostController@index'
+    ]);
+
     Route::get('/posts/create', [
     	'as' => 'posts.get_create',
     	'uses' => 'PostController@get_create'
@@ -74,5 +79,11 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 // Admin
-Route::get('/admin', 'Admin\AdminController@index');
-Route::get('/admin/{item}', 'Admin\AdminController@getUserItem');
+Route::get('/admin', [
+    'as'   => 'admin.get_user_posts',
+    'uses' => 'Admin\AdminController@index'
+]);
+Route::get('/admin/posts/{item}', [
+    'as'   => 'admin.view_user_posts',
+    'uses' => 'Admin\AdminController@getUserItem'
+]);

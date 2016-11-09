@@ -20,7 +20,7 @@ class RedirectIfAuthenticated
     {
         $user    = Auth::user();
 
-        if($user && $user->user_type == ADMIN_ROLE) {
+        if($user && $user->user_type == Constant::ADMIN_ROLE) {
             return redirect('/admin');
         } else if($user) {
             return redirect('/home');
