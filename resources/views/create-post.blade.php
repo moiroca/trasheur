@@ -48,6 +48,16 @@
 			</div>
 			
 			<div class="form-group">
+				<div class="row">
+					<select>
+						<option>- Choose Mode -</option>
+						<option>Disposal</option>
+						<option>Needed</option>
+					</select>
+				</div>
+			</div>	
+
+			<div class="form-group">
 				<label>Discription</label>
 				<textarea class="form-control" rows="5" cols="50"></textarea>
 			</div>
