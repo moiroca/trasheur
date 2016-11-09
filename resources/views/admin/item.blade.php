@@ -8,9 +8,9 @@
 @section('content')
 	<div class="container">
 		<div id="light-gallery">
-			<!-- <a href="/uploads/1.png">
+			<a href="/uploads/1.png">
 			    <img width="150px" height="150px" src="/uploads/1.png" />
-			</a> -->
+			</a>
 		</div>
 	</div>
 @endsection

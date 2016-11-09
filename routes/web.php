@@ -31,11 +31,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/', [
-	'as'   => 'upload', 
-	'uses' => 'ImageController@getUpload'
-]);
-
 Route::post('upload', [
 	'as'   => 'upload-post', 
 	'uses' => 'ImageController@postUpload'
