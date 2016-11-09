@@ -3,6 +3,10 @@
 	margin: 0;
 }
 
+.outer-container {
+	min-height: 90vh;
+}
+ 
 .inner-wrapper {
 	width: 1200px;
 	margin: auto;
@@ -16,6 +20,7 @@
 .sub-wrapper {
 	background: #fff;
 	border-radius: 3px;
+	width: 100%;
 	padding: 20px;
 	margin-top: 30px;
 	overflow: auto;
@@ -28,6 +33,12 @@ ul {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $header-font, Helvetica, Arial, sans-serif;
+	margin-top: 10px;
+}
+
+a {
+	font-family: $header-font, Helvetica, Arial, sans-serif;
+	cursor: pointer;
 }
 
 p {
@@ -35,20 +46,23 @@ p {
 }
 
 span, label, th {
+	color: darken($subtext-color, 5%);
+	font-size: 12px;
 	font-family: $sub-text, Helvetica, Arial, sans-serif;
 }
 
 td {
 	color: darken($text-color, 10%);
 	font-family: $body-font;
+	padding: 10px 0;
 }
 
 label {
-	color: lighten($subtext-color, 15%);
+	color: $subtext-color;
 }
 
 span {
-	color: lighten($subtext-color, 10%);
+	color: $subtext-color;
 }
 
 .btn-link, .btn-action {
@@ -67,6 +81,7 @@ span {
 
 .btn-link {
 	background: $secondary-color;
+	border: solid 1px $secondary-color;
 	&:hover {
 		background: darken($secondary-color, 3%);
 	}
@@ -74,6 +89,7 @@ span {
 
 .btn-action {
 	background: $primary-color;
+	border: solid 1px $primary-color;
 	&:hover {
 		background: darken($primary-color, 3%);
 	}

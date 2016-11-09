@@ -19,6 +19,10 @@ Route::get('/create-post', function () {
     return view('create-post');
 });
 
+Route::get('/view-profile', function () {
+    return view('view-profile');
+});
+
 Route::get('/view-post', function () {
     return view('view-post');
 });

@@ -1,0 +1,31 @@
+.item-card {
+	border: solid 1px $subtext-color;
+	border-radius: 5px;
+	margin-right: 10px;
+	display: inline-block;
+	overflow: hidden;
+	header {
+		position: relative;
+		border-radius: 5px 5px 0 0;
+		border-bottom: solid 1px $subtext-color;
+		overflow: hidden;
+		span {
+			position: absolute;
+			right: 0;
+    		bottom: -3px;
+    		color: #fff !important;
+    		font-weight: $bold;
+			background: $primary-color;
+			border-radius: 3px 0 0 0;
+			padding: 5px 10px;
+    		margin: 0;
+		}
+	}
+	footer {
+		padding: 10px 15px;
+		overflow: hidden;
+		p {
+			text-overflow: ellipsis;
+		}
+	}
+}

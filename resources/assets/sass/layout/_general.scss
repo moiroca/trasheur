@@ -1,0 +1,76 @@
+.covertext-wrapper {
+	text-align: center;
+}
+
+.createpost-wrapper {
+	h1 {
+		text-align: center;
+	}
+}
+
+.viewlistings-wrapper {
+	table {
+		width: 100%;
+		thead {
+			border-bottom: solid 3px $subtext-color;
+		}
+		th {
+			text-transform: uppercase;
+    		font-weight: $black;
+    		padding: 10px 0;
+		}
+	}
+}
+
+.viewpost-wrapper {
+	header {
+		li {
+			display: block;
+			a {
+				display: inline-block;
+			}
+		}
+	}
+
+	.desc-wrapper {
+		padding: 15px 20px;
+		background: #fff;
+		label {
+			transform: uppercase;
+		}
+	}
+
+	.btn-purhcase {
+		font-size: 30px;
+		font-weight: 700;
+		text-transform: uppercase;
+		width: 100%;
+		padding: 10px;
+	}
+}
+
+.profile-wrapper {
+	.inner-wrapper {
+		padding: 0 10px 30px;
+    	overflow: auto;
+    	img {
+    		width: 100%;
+    	}
+    	h2 {
+    		margin-bottom: 3px;
+    	}
+    	span {
+    		color: darken($subtext-color, 15%);
+    		font-size: 14px;
+    		margin-bottom: 3px;
+    	}
+	}
+
+	.sub-wrapper {
+		margin: 0;
+		.item-card {
+			width: 22%;
+			height: 350px;
+		}
+	}
+}
