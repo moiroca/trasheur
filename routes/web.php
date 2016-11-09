@@ -11,26 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/create-post', function () {
-    return view('create-post');
-});
-
-Route::get('/view-profile', function () {
-    return view('view-profile');
-});
-
-Route::get('/view-post', function () {
-    return view('view-post');
-});
-
-Route::get('/view-listings', function () {
-    return view('view-listings');
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
@@ -51,7 +31,6 @@ Route::get('server-images', [
 ]);
 
 Route::group(['middleware' => 'auth'], function () {
-
     Route::get('/posts', [
         'as' => 'posts.index',
         'uses' => 'PostController@index'
@@ -67,16 +46,34 @@ Route::group(['middleware' => 'auth'], function () {
     	'uses' => 'PostController@post_create'
     ]);
 
-    Route::get('/profile', [
-        'as' => 'profile',
-        'uses' => 'ProfileController@index'
-    ]);
-
     Route::get('/posts/{item}', [
         'as' => 'post.item',
         'uses' => 'PostController@getPost'
     ]);
 });
+
+// Static
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/create-post', function () {
+    return view('templates.create-post');
+});
+
+Route::get('/view-profile', function () {
+    return view('templates.view-profile');
+});
+
+Route::get('/view-post', function () {
+    return view('templates.view-post');
+});
+
+Route::get('/view-listings', function () {
+    return view('templates.view-listings');
+});
+
 
 // Admin
 Route::get('/admin', [
