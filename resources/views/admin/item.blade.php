@@ -14,8 +14,6 @@
 					<ul>
 						<li><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i> <b> {{ $post->seller->name }} </b> </a></li>
 						<li><a href="javascript:void(0)"><i class="fa fa-map-marker" aria-hidden="true"></i> {{ $post->seller->location }}</a></li>
-						<li><a href="mailto:{{ $post->seller->email }}"><i class="fa fa-envelope" aria-hidden="true"></i> {{ $post->seller->email }} </a></li>
-						<li><a href="javascript:void(0)"><i class="fa fa-address-card" aria-hidden="true"></i> {{ $post->seller->contact }}</a></li>
 					</ul>
 				</header>	
 				<div class="form-group">
@@ -26,6 +24,13 @@
 				<div class="form-group desc-wrapper">
 					<label>Description</label>
 					<p>{{ $post->description }}</p>
+				</div>
+				<div class="form-group desc-wrapper">
+					<label>Contact</label>
+					<ul>
+						<li><a href="mailto:{{ $post->seller->email }}"><i class="fa fa-envelope" aria-hidden="true"></i> {{ $post->seller->email }} </a></li>
+						<li><a href="javascript:void(0)"><i class="fa fa-address-card" aria-hidden="true"></i> {{ $post->seller->contact }}</a></li>
+					</ul>
 				</div>
 			</div>
 			<div class="col-lg-4 side-wrapper">
