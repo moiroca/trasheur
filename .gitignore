@@ -13,3 +13,5 @@ Homestead.yaml
 /public/images/icon_size/*
 /public/css
 /public/uploads
+/public/.DS_Store
+/.DS_Store
