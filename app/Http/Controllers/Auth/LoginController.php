@@ -24,7 +24,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/posts';
+    protected $redirectTo = '/posts/create';
     
     protected $redirectToAdmin = '/admin';
 
