@@ -41,7 +41,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="img/trashure-logo.png">
+                        <img src="/img/trashure-logo.png">
                     </a>
                 </div>
 
