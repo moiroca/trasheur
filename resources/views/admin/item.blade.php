@@ -12,8 +12,10 @@
 				<header>
 					<h2 name="title">{{ $post->title }}</h2>
 					<ul>
-						<li><a href=""><i class="fa fa-user" aria-hidden="true"></i> {{ $post->seller->name }} </a></li>
-						<li><a href=""><i class="fa fa-map-marker" aria-hidden="true"></i> {{ $post->seller->location }}</a></li>
+						<li><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i> <b> {{ $post->seller->name }} </b> </a></li>
+						<li><a href="javascript:void(0)"><i class="fa fa-map-marker" aria-hidden="true"></i> {{ $post->seller->location }}</a></li>
+						<li><a href="mailto:{{ $post->seller->email }}"><i class="fa fa-envelope" aria-hidden="true"></i> {{ $post->seller->email }} </a></li>
+						<li><a href="javascript:void(0)"><i class="fa fa-address-card" aria-hidden="true"></i> {{ $post->seller->contact }}</a></li>
 					</ul>
 				</header>	
 				<div class="form-group">
@@ -35,7 +37,6 @@
 					@empty
 					@endforelse
 				</div>
-				<button class="btn-purhcase btn-action">Purchase</button>
 			</div>
 		</div>
 	</div>
