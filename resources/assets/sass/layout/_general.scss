@@ -64,7 +64,7 @@
     p {
     	font-size: 30px;
     	font-weight: 100;
-    	margin-bottom: 32px;
+    	margin: -25px 0 32px;
     }
     a {
     	font-size: 22px;
@@ -73,6 +73,9 @@
     	width: 250px;
     	padding: 10px 30px 6px;
     	display: inline-block;
+    }
+    .logo {
+    	width: 600px;
     }
 }
 
@@ -168,6 +171,7 @@
 		img {
 			width: 100%;
 			height: auto;
+			margin: 10px 15px 0 0;
 		}
 	}
 }

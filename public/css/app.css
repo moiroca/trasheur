@@ -5773,8 +5773,15 @@ button.close {
 body {
   padding-bottom: 50px; }
 
+.navbar .navbar-brand img {
+  width: 100px; }
+
 .navbar .navbar-right a {
   text-transform: uppercase; }
+  .navbar .navbar-right a:hover {
+    color: #adbc42 !important; }
+    .navbar .navbar-right a:hover i {
+      color: #adbc42 !important; }
 
 .navbar .navbar-right span {
   color: #c4c4c4; }
@@ -6004,7 +6011,7 @@ span {
   .covertext-wrapper p {
     font-size: 30px;
     font-weight: 100;
-    margin-bottom: 32px; }
+    margin: -25px 0 32px; }
   .covertext-wrapper a {
     font-size: 22px;
     font-weight: 700;
@@ -6012,6 +6019,8 @@ span {
     width: 250px;
     padding: 10px 30px 6px;
     display: inline-block; }
+  .covertext-wrapper .logo {
+    width: 600px; }
 
 .createpost-wrapper h1 {
   text-align: center; }
@@ -6082,7 +6091,8 @@ span {
     display: inline-block; }
   .viewpost-wrapper .side-wrapper img {
     width: 100%;
-    height: auto; }
+    height: auto;
+    margin: 10px 15px 0 0; }
 
 .profile-wrapper .inner-wrapper {
   padding: 0 10px 10px;

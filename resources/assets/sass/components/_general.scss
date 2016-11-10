@@ -7,12 +7,23 @@ body {
 	padding-bottom: 50px;
 }
 
-.navbar .navbar-right {
-	a {
-		text-transform: uppercase;
+.navbar {
+	.navbar-brand img {
+		width: 100px;
 	}
-	span {
-		color: darken($subtext-color, 15%);
+	.navbar-right {
+		a {
+			text-transform: uppercase;
+			&:hover {
+				color: $primary-color !important;
+				i {
+					color: $primary-color !important;
+				}
+			}
+		}
+		span {
+			color: darken($subtext-color, 15%);
+		}
 	}
 }
 
