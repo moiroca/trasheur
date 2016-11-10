@@ -1,7 +1,3 @@
-.navbar {
-	margin: 0;
-}
-
 .homepage-wrapper {
 	.outer-container {
 	    position: absolute;
@@ -20,6 +16,35 @@
 		bottom: 0;
 		background: rgba(1, 1, 1, 0.3);
 	}
+}
+
+.login-wrapper, .reg-wrapper, .sendemail-wrapper, .resetpwd-wrapper {
+	form {
+    	padding: 0 20px;
+    }
+    button {
+    	width: 100%;
+    }
+    .panel-footer {
+    	background: #fff;
+    	padding: 20px;
+    	margin: 0;
+    	overflow: auto;
+    }
+}
+
+.login-wrapper {
+    .link {
+    	font-size: 12px;
+    	margin-top: 3px;
+    }
+    .checkbox {
+    	padding: 0;
+    	margin-bottom: 7px;
+    }
+    .panel-body {
+    	padding: 15px 15px 8px;
+    }
 }
 
 .covertext-wrapper {
@@ -54,6 +79,27 @@
 .createpost-wrapper {
 	h1 {
 		text-align: center;
+	}
+	form {
+		border-radius: 5px;
+		border-color: $subtext-color;
+		h4 {
+			color: $subtext-color;
+			text-align: center;
+			margin-top: 43px;
+			span {
+				color: $subtext-color;
+				margin-left: 5px;
+			}
+
+		}
+		&:hover {
+			border-color: $primary-color;
+			h4, span {
+				color: $primary-color;
+				cursor: pointer;
+			}
+		}
 	}
 }
 

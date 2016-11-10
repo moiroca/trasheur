@@ -3,6 +3,19 @@
 	margin: 0;
 }
 
+body {
+	padding-bottom: 50px;
+}
+
+.navbar .navbar-right {
+	a {
+		text-transform: uppercase;
+	}
+	span {
+		color: darken($subtext-color, 15%);
+	}
+}
+
 .outer-container {
 	min-height: 90vh;
 }
@@ -26,6 +39,11 @@
 	overflow: auto;
 }
 
+.mini-form {
+	width: 350px;
+    margin: auto;
+}
+
 ul {
 	list-style: none;
 	padding: 0;
@@ -37,10 +55,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
+	color: $primary-color;
 	font-family: $header-font, Helvetica, Arial, sans-serif;
 	cursor: pointer;
 	&:hover {
 		text-decoration: none;
+		color: darken($primary-color, 3%);
 	}
 }
 
@@ -61,7 +81,8 @@ td {
 }
 
 label {
-	color: $subtext-color;
+	color: darken($subtext-color, 15%);
+	text-transform: uppercase;
 }
 
 span {
@@ -74,7 +95,7 @@ span {
 	font-weight: $black;
     text-transform: uppercase;
     border-radius: 3px;
-    padding: 3px 10px 2px;
+    padding: 4px 10px 2px;
     min-width: 50px;
     &:hover, &:focus, &:active {
     	color: #fff;
@@ -85,7 +106,7 @@ span {
 .btn-link {
 	background: $secondary-color;
 	border: solid 1px $secondary-color;
-	&:hover {
+	&:hover, &:focus, &:active {
 		background: darken($secondary-color, 3%);
 	}
 }
@@ -93,7 +114,19 @@ span {
 .btn-action {
 	background: $primary-color;
 	border: solid 1px $primary-color;
-	&:hover {
+	&:hover, &:focus, &:active {
 		background: darken($primary-color, 3%);
 	}
 }
+
+.link {
+	color: $primary-color;
+	font-family: $body-font, Helvetica, Arial, sans-serif;
+	font-weight: $normal;
+	text-transform: uppercase;
+	&:hover, &:focus, &:active {
+		color: $primary-color;
+		text-decoration: none;
+	}
+}
+
