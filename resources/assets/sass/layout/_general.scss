@@ -152,6 +152,23 @@
 
 	.side-wrapper {
 		margin-top: 130px;
+		#light-gallery {
+			background: #fff;
+    		border: solid 1px $subtext-color;
+    		border-radius: 3px;
+			padding: 10px;
+		}
+		a {
+			width: 150px;
+			height: 150px;
+			border: solid 1px $subtext-color;
+			overflow: hidden;
+			display: inline-block;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
 }
 
@@ -161,6 +178,7 @@
     	overflow: auto;
     	img {
     		width: 100%;
+    		height: auto;
     	}
     	h2 {
     		margin-bottom: 3px;

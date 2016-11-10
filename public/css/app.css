@@ -5891,7 +5891,7 @@ span {
   overflow: hidden; }
   .coverPhoto-wrapper img {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: block; }
 
 .gallery-wrapper {
@@ -6069,12 +6069,27 @@ span {
 
 .viewpost-wrapper .side-wrapper {
   margin-top: 130px; }
+  .viewpost-wrapper .side-wrapper #light-gallery {
+    background: #fff;
+    border: solid 1px #eaeaea;
+    border-radius: 3px;
+    padding: 10px; }
+  .viewpost-wrapper .side-wrapper a {
+    width: 150px;
+    height: 150px;
+    border: solid 1px #eaeaea;
+    overflow: hidden;
+    display: inline-block; }
+  .viewpost-wrapper .side-wrapper img {
+    width: 100%;
+    height: auto; }
 
 .profile-wrapper .inner-wrapper {
   padding: 0 10px 10px;
   overflow: auto; }
   .profile-wrapper .inner-wrapper img {
-    width: 100%; }
+    width: 100%;
+    height: auto; }
   .profile-wrapper .inner-wrapper h2 {
     margin-bottom: 3px; }
   .profile-wrapper .inner-wrapper span {

@@ -14,7 +14,7 @@
 			@forelse( $posts as $post )
 				<div class="item-card">
 					<header>
-						<img height="250" src="{{ $post->images()->first()->imageFullUrl() }}">
+						<img src="{{ $post->images()->first()->imageFullUrl() }}">
 						<span class="hidden">Sold</span>
 					</header>
 					<footer>

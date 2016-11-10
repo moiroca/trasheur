@@ -32,7 +32,7 @@
 				<div id="light-gallery">
 					@forelse( $post->images as $image )
 						<a href="{{ $image->imageFullUrl() }}">
-					    <img width="150px" height="150px" src="{{ $image->imageFullUrl() }}" />
+					    <img src="{{ $image->imageFullUrl() }}" />
 					</a>
 					@empty
 					@endforelse
