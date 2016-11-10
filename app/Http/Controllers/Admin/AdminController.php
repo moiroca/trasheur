@@ -16,7 +16,7 @@ class AdminController extends BaseController {
      * @return void
      */
 	public function __construct(PostRepository $postRepo) {
-		$this->middleware('auth');
+		$this->middleware('admin.auth');
 		$this->postRepo = $postRepo;
 	}
 
