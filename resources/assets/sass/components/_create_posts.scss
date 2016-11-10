@@ -1,6 +1,5 @@
 .createpost-wrapper {
-	
 	form {
-		border : 2px dashed rgba(0, 0, 0, 0.5) !important;
+		border : 2px dashed darken($subtext-color, 10%) !important;
 	}
 }

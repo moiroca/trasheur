@@ -23,7 +23,7 @@
                 
                 {!! Form::open([
                     'url' => route('upload-post'), 
-                    'class' => 'dropzone', 
+                    'class' => 'dropzone form-group', 
                     'files' => true, 
                     'id'=>'real-dropzone']) !!}
                 
@@ -36,12 +36,15 @@
 
                     <div class="dropzone-previews" id="dropzonePreview"></div>
 
-                    <h4 style="text-align: center; color:#428bca;">Drop images in this area  <span class="fa fa-upload"></span></h4>
+                    <h4>Drop images in this area  <span class="fa fa-upload"></span></h4>
                 </div>
                 {!! Form::close() !!}
-                <span class="help-block">Images are uploaded as soon as you drop them</span>
-                <span class="help-block">Maximum allowed size of image is 8MB</span>
-                </ul>
+                <div class="form-group">
+                    <p class="help-block">
+                        Images are uploaded as soon as you drop them<br>
+                        Maximum allowed size of image is 8MB
+                    </p>
+                </div>
             </div>
             <!-- Dropzone Preview Template -->
             <div id="preview-template" style="display: none;">
@@ -87,7 +90,7 @@
 
             <div id="item_images" style="display: none;"></div>
             <footer>
-                <button type="button" id="SaveButton" class="btn-link pull-right">Save Post</button>
+                <button type="button" id="SaveButton" class="btn-action pull-right">Save Post</button>
             </footer>
         </div>
     </div>  
