@@ -7,7 +7,7 @@
 	    <div class="inner-wrapper">
 	    	<div class="screen"></div>
 	        <div class="covertext-wrapper">
-	            <h1>Trashure</h1>
+	            <img src="img/trashure-logo-white.png" class="logo">
 	            <p>One man's trash is another man's treasure</p>
 	            @if($isSeller)
 		            <a href="{{ route('posts.get_create') }}" class="btn-action">Post an Item</a>
