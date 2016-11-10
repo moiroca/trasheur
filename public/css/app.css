@@ -5932,6 +5932,7 @@ span {
       margin: 0; }
   .item-card footer {
     height: 40%;
+    background: #fff;
     padding: 10px 15px;
     overflow: hidden; }
     .item-card footer a {
@@ -6039,10 +6040,17 @@ span {
     font-weight: 700;
     padding: 10px 0; }
 
-.viewpost-wrapper header li {
-  display: block; }
-  .viewpost-wrapper header li a {
-    display: inline-block; }
+.viewpost-wrapper header {
+  margin-bottom: 30px; }
+  .viewpost-wrapper header li {
+    display: block; }
+    .viewpost-wrapper header li a {
+      color: #c4c4c4;
+      font-family: "Quicksand", Arial;
+      font-weight: 400;
+      display: inline-block; }
+      .viewpost-wrapper header li a:hover {
+        color: #adbc42; }
 
 .viewpost-wrapper .desc-wrapper {
   padding: 15px 20px;
@@ -6058,8 +6066,11 @@ span {
   width: 100%;
   padding: 10px; }
 
+.viewpost-wrapper .side-wrapper {
+  margin-top: 130px; }
+
 .profile-wrapper .inner-wrapper {
-  padding: 0 10px 30px;
+  padding: 0 10px 10px;
   overflow: auto; }
   .profile-wrapper .inner-wrapper img {
     width: 100%; }
@@ -6071,6 +6082,7 @@ span {
     margin-bottom: 3px; }
 
 .profile-wrapper .sub-wrapper {
+  background: none;
   margin: 0; }
   .profile-wrapper .sub-wrapper .item-card {
     width: 22%;

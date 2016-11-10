@@ -119,10 +119,17 @@
 
 .viewpost-wrapper {
 	header {
+		margin-bottom: 30px;
 		li {
 			display: block;
 			a {
+				color: darken($subtext-color, 15%);
+				font-family: $sub-text, Arial;
+				font-weight: $normal;
 				display: inline-block;
+				&:hover {
+					color: $primary-color;
+				}
 			}
 		}
 	}
@@ -142,11 +149,15 @@
 		width: 100%;
 		padding: 10px;
 	}
+
+	.side-wrapper {
+		margin-top: 130px;
+	}
 }
 
 .profile-wrapper {
 	.inner-wrapper {
-		padding: 0 10px 30px;
+		padding: 0 10px 10px;
     	overflow: auto;
     	img {
     		width: 100%;
@@ -162,6 +173,7 @@
 	}
 
 	.sub-wrapper {
+		background: none;
 		margin: 0;
 		.item-card {
 			width: 22%;
