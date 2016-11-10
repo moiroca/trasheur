@@ -5916,6 +5916,7 @@ span {
   overflow: hidden; }
   .item-card header {
     position: relative;
+    height: 60%;
     border-radius: 5px 5px 0 0;
     border-bottom: solid 1px #eaeaea;
     overflow: hidden; }
@@ -5930,6 +5931,7 @@ span {
       padding: 5px 10px;
       margin: 0; }
   .item-card footer {
+    height: 40%;
     padding: 10px 15px;
     overflow: hidden; }
     .item-card footer a {
@@ -5938,6 +5940,7 @@ span {
       .item-card footer a:hover {
         color: #9ca93b; }
     .item-card footer p {
+      word-break: break-word;
       text-overflow: ellipsis; }
 
 .createpost-wrapper form {
