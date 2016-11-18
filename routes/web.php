@@ -14,6 +14,7 @@
 Route::get('/', function () {
     $user = Auth::user();
     $isSeller = Auth::guest() || ($user && $user->user_type == \App\Utilities\Constant::SELLER_ROLE);
+
     return view('welcome', compact('isSeller'));
 });
 
@@ -22,39 +23,39 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::post('upload', [
-	'as'   => 'upload-post', 
-	'uses' => 'ImageController@postUpload'
+    'as'   => 'upload-post',
+    'uses' => 'ImageController@postUpload',
 ]);
 
 Route::post('upload/delete', [
-	'as' => 'upload-remove', 
-	'uses' =>'ImageController@deleteUpload'
+    'as'   => 'upload-remove',
+    'uses' => 'ImageController@deleteUpload',
 ]);
 
 Route::get('server-images', [
-	'as'   => 'server-images', 
-	'uses' => 'ImageController@getServerImages'
+    'as'   => 'server-images',
+    'uses' => 'ImageController@getServerImages',
 ]);
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/posts', [
-        'as' => 'posts.index',
-        'uses' => 'PostController@index'
+        'as'   => 'posts.index',
+        'uses' => 'PostController@index',
     ]);
 
     Route::get('/posts/create', [
-    	'as' => 'posts.get_create',
-    	'uses' => 'PostController@get_create'
+        'as'   => 'posts.get_create',
+        'uses' => 'PostController@get_create',
     ]);
 
     Route::post('/posts/create', [
-    	'as' => 'posts.post_create',
-    	'uses' => 'PostController@post_create'
+        'as'   => 'posts.post_create',
+        'uses' => 'PostController@post_create',
     ]);
 
     Route::get('/posts/{item}', [
-        'as' => 'post.item',
-        'uses' => 'PostController@getPost'
+        'as'   => 'post.item',
+        'uses' => 'PostController@getPost',
     ]);
 });
 
@@ -79,9 +80,9 @@ Route::get('/view-listings', function () {
 // Admin
 Route::get('/admin', [
     'as'   => 'admin.get_user_posts',
-    'uses' => 'Admin\AdminController@index'
+    'uses' => 'Admin\AdminController@index',
 ]);
 Route::get('/admin/posts/{item}', [
     'as'   => 'admin.view_user_posts',
-    'uses' => 'Admin\AdminController@getUserItem'
+    'uses' => 'Admin\AdminController@getUserItem',
 ]);

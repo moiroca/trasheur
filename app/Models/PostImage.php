@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class PostImage extends Model
 {
-	protected $table = "images";
-	
+    protected $table = 'images';
+
     /**
      * The attributes that are mass assignable.
      *
@@ -22,10 +22,10 @@ class PostImage extends Model
      *
      * @var bool
      */
-    public $timestamps = true; 
+    public $timestamps = true;
 
     public function imageFullUrl()
     {
-        return env('APP_URL') . '/images/full_size/' . $this->url;
+        return env('APP_URL').'/images/full_size/'.$this->url;
     }
 }

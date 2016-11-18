@@ -25,7 +25,7 @@ class LoginController extends Controller
      * @var string
      */
     protected $redirectTo = '/posts/create';
-    
+
     protected $redirectToAdmin = '/admin';
 
     /**
@@ -37,5 +37,4 @@ class LoginController extends Controller
     {
         $this->middleware('guest', ['except' => 'logout']);
     }
-
 }
