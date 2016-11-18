@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Utilities\Constant;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','location','contact'
+        'name', 'email', 'password', 'location', 'contact',
     ];
 
     /**
@@ -33,7 +33,8 @@ class User extends Authenticatable
         return $this->hasMany('App\Models\Post');
     }
 
-    public function isAdmin() {
+    public function isAdmin()
+    {
         return $this->user_type == Constant::ADMIN_ROLE;
     }
 }

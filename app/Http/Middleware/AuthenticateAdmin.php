@@ -18,7 +18,8 @@ class AuthenticateAdmin
     /**
      * Create a new middleware instance.
      *
-     * @param  \Illuminate\Contracts\Auth\Factory  $auth
+     * @param \Illuminate\Contracts\Auth\Factory $auth
+     *
      * @return void
      */
     public function __construct(Auth $auth)
@@ -29,12 +30,13 @@ class AuthenticateAdmin
     /**
      * Handle an incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
+     * @param \Illuminate\Http\Request $request
+     * @param \Closure                 $next
      * @param  string[]  ...$guards
-     * @return mixed
      *
      * @throws \Illuminate\Auth\AuthenticationException
+     *
+     * @return mixed
      */
     public function handle($request, Closure $next, ...$guards)
     {
@@ -46,16 +48,17 @@ class AuthenticateAdmin
     /**
      * Determine if the user is logged in to any of the given guards.
      *
-     * @param  array  $guards
-     * @return void
+     * @param array $guards
      *
      * @throws \Illuminate\Auth\AuthenticationException
+     *
+     * @return void
      */
     protected function authenticate(array $guards)
     {
         if (empty($guards)) {
             $authenticated_user = $this->auth->authenticate();
-            if($authenticated_user->isAdmin()) {
+            if ($authenticated_user->isAdmin()) {
                 return $authenticated_user;
             }
         }

@@ -12,7 +12,7 @@ class Post extends Model
      * @var array
      */
     protected $fillable = [
-        'title', 'description', 'user_id'
+        'title', 'description', 'user_id',
     ];
 
     /**
@@ -20,7 +20,7 @@ class Post extends Model
      *
      * @var bool
      */
-    public $timestamps = true; 
+    public $timestamps = true;
 
     public function images()
     {

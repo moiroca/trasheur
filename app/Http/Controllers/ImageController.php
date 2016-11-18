@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Input;
-use App\Models\PostImage as Image; 
-use \App\Services\PostImageService;
+use App\Models\PostImage as Image;
+use App\Services\PostImageService;
 use File;
+use Illuminate\Support\Facades\Input;
 
 class ImageController extends Controller
 {
@@ -25,39 +25,37 @@ class ImageController extends Controller
     {
         $photo = Input::all();
         $response = $this->imageService->upload($photo);
-        return $response;
 
+        return $response;
     }
 
     public function getServerImages()
     {
         $images = Image::get(['name', 'url']);
         $imageAnswer = [];
-        
+
         foreach ($images as $image) {
             $imageAnswer[] = [
                 'original' => $image->name,
-                'server' => $image->url,
-                'size' => File::size(public_path('images/full_size/' . $image->name))
+                'server'   => $image->url,
+                'size'     => File::size(public_path('images/full_size/'.$image->name)),
             ];
         }
 
         return response()->json([
-            'images' => $imageAnswer
+            'images' => $imageAnswer,
         ]);
     }
-    
+
     public function deleteUpload()
     {
-
         $filename = Input::get('id');
 
-        if(!$filename)
-        {
+        if (!$filename) {
             return 0;
         }
 
-        $response = $this->imageService->delete( $filename );
+        $response = $this->imageService->delete($filename);
 
         return $response;
     }
